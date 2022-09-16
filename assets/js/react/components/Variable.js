@@ -1,5 +1,4 @@
 const Variable = ({ variable }) => {
-    console.log("Llega variable: ", variable);
     return (
         <div>
             <h3>Variable</h3>

@@ -21,7 +21,7 @@ class Welcome extends MY_Controller {
 	public function index()
 	{
 		$this->load->view("header");
-		$this->render_view( 'Welcome' );
+		$this->render_view( 'components/main-page' );
 		$this->load->view("footer");
 	}
 	public function prueba($id){

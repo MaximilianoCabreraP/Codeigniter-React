@@ -2,11 +2,11 @@
 
 <script>
 	<?php
-		$include_file = "/js/react/components/{$_module_name}.js";
+		$include_file = "../../../assets/prueba/src/{$_module_name}.js";
 	?>
 	System.import('<?php echo $include_file; ?>').then(function(module) {
-		var props = <?php echo json_encode($react_vars, JSON_FORCE_OBJECT); ?>;
-		
+		var props =  { ...<?php echo json_encode($react_vars, JSON_FORCE_OBJECT); ?>, React};
+
 		const container = document.getElementById('content');
 		const root = ReactDOM.createRoot(container)
 		root.render(React.createElement(module.default, props));
