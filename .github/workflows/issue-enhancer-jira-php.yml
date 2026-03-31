@@ -13,7 +13,7 @@ permissions:
 jobs:
   issue-enhancer-jira-php:
     name: 🔍 Enhance JIRA Issue (PHP)
-    uses: MaximilianoCabreraP/gh-agentic-workflows/blob/master/.github/workflows/issue-enhancer-jira-php.lock.yml
+    uses: maximilianoCabreraP/gh-agentic-workflows/.github/workflows/issue-enhancer-jira-php.lock.yml@master
     permissions:
       contents: read
       issues: write
