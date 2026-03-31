@@ -1,0 +1,22 @@
+name: 🔍 Issue Enhancer JIRA PHP (Caller)
+
+on:
+  issues:
+    types:
+      - opened
+      - reopened
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  issue-enhancer-jira-php:
+    name: 🔍 Enhance JIRA Issue (PHP)
+    uses: maximilianoCabreraP/gh-agentic-workflows/.github/workflows/issue-enhancer-jira-php.lock.yml@master
+    permissions:
+      contents: read
+      issues: write
+      packages: write
+    secrets:
+      COPILOT_PAT: ${{ secrets.COPILOT_PAT }}
